@@ -1,0 +1,214 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6a6a6a;
+    font-size: 14px;
+    background-color: #eff2f1;
+}
+/*  start of navigaton header */
+.custom-navbar{
+    background: #3b5d50 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* logo size */
+.custom-navbar .navbar-brand {
+    font-size: 34px;
+    font-weight: 600;
+    color: #fff;
+}
+/* toggler button */
+.navbar-toggler{
+    border-color: transparent;
+    color: rgba(255,255,255,.55);
+}
+/* nav-li and color line */
+
+.custom-navbar-nav li a{
+    position: relative;
+    font-weight: 500;
+    color: #ffffff !important;
+     opacity: .5; 
+    transition: .3s all ease;
+}
+ .custom-navbar-nav li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.custom-navbar-nav li.active a{
+    opacity: 1;
+
+}
+
+.custom-navbar-nav li a::before{
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    background: #f9bf29;
+    height: 5px;
+    opacity: 1;
+    visibility: visible;
+    transition: .15s all ease-in-out;
+}
+/* icons */
+.fa-user{
+    color:white;
+    font-size: 20px;
+}
+.fa-cart-shopping{
+    color:white;
+    font-size: 20px;
+}
+/* end navigation */
+/* start hero section */
+.hero{
+    padding: 7rem;
+    background: #3b5d50;
+}
+.intro-excerpt {
+    max-width: 450px;
+}
+.hero h1 {
+
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+/* end hero section */
+/* start form */
+.untree-co-section{
+    padding: 7rem 0;
+}
+.border {
+    border: 1px solid #dee2e6 !important;
+}
+.border a{
+    transition: .3s all ease;
+    color: #2f2f2f;
+    text-decoration: underline;
+}
+.form-control {
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+}
+.input-group .btn {
+    position: relative;
+    z-index: 2;
+}
+h3 a{
+    text-decoration: underline;
+    transition: .3s all ease;
+    color: #2f2f2f;
+}
+#collapsebank{
+    display: none;
+}
+/* end form */
+/* Start footer section */
+.footer-section{
+    padding: 80px 0;
+    background: #ffffff;
+   }
+   .container-realtive{
+    position: relative;
+   }
+   .sofa-img {
+    position: absolute;
+    z-index: 1;
+    margin-top: -280px;
+    right: 0;
+  }
+   .subscription-form {
+    position: relative;
+    z-index: 2;
+  
+  }
+  .subscription-form h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3b5d50;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  .subscription-form .btn{
+    border-radius: 10px !important;
+  }
+  .btn-primary {
+    background: #3b5d50;
+    border-color: #3b5d50;
+  }
+  .footer-logo{
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3b5d50;
+  }
+  .footer-logo-wrap{
+  margin-top:84px ;
+  }
+  .custom-social li {
+    margin: 2px;
+    display: inline-block;
+  }
+  .custom-social li a{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+  background: #dce5e4;
+  color: #3b5d50;
+  border-radius: 50%;
+  }
+  .custom-social li a:hover{
+    background-color: #3b5d50;
+    color: #ffffff;
+  }
+  .we{
+    margin-right: 150px;
+    margin-top: 150px;
+  }
+  #ppf{
+    width:300px;
+    height: auto;
+  }
+  #edf{
+    margin-top: 154px;
+  }
+  
+  .links-wrap {
+    margin-top: 40px;
+  }
+  .links-wrap li{
+    margin-bottom: 10px;
+  }
+  .copyright {
+    font-size: 14px !important;
+  }
+  .border-top {
+    border-color: #dce5e4;
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .footer-section a {
+    text-decoration: none;
+    color: #2f2f2f;
+    transition: .3s all ease;
+  }
+  /* end footer section */
