@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart page</title>
+    <!-- style -->
+    <link rel="stylesheet" href="CSS/cart.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- font icon -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Start of Navigation-Header -->
+    <nav
+      class="custom-navbar navbar navbar navbar-expand-md navbar-dark p-3"
+      arial-label="Furni navigation bar">
+  
+      <div class="container">
+        <a href="furni.html" class="navbar-brand"> Furni. </a>
+        <button class="navbar-toggler"type="button"data-bs-toggle="collapse"
+        data-bs-target="#navbarsFurni"aria-controls="navbarsFurni"aria-expanded="false"
+        aria-label="Toggle navigation">
+
+          <div class="navbar-toggler-icon"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+          <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+
+            <li class="nav-item active"><a href="furni.html" class="nav-link">Home</a> </li>
+            <li><a href="shop.html" class="nav-link">Shop</a> </li>
+            <li><a href="about.html" class="nav-link">About us</a></li>
+            <li><a href="service.html" class="nav-link">Service</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li> <a href="contact.html" class="nav-link">Contact us</a> </li>
+          </ul>
+
+          <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+            <li>
+              <a href="#" class="nav-link">
+                <i class="fa-regular fa-user m-2"></i>
+              </a>
+            </li>
+            <li>
+              <a href="cart.html" class="nav-link">
+                <i class="fa-solid fa-cart-shopping m-2"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End of Navigation-Header -->
+
+     <!-- start hero section -->
+     <div class="hero">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="intro-excerpt">
+                        <h1>Cart</h1>
+                    </div>
+                </div>
+                <div class="col-lg-7"></div>
+            </div>
+        </div>
+      </div>
+      <!-- end hero section -->
+       <div class="untree-co-section before-footer-section">
+        <div class="container">
+            <div class="row-mb-5">
+                <form class="col-md-12" method="post">
+                    <div class="side-blocks-table">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th class="product-thumbnali">image</th>
+                                <th class="product-name">Product</th>
+                                <th class="product-price">Price</th>
+                                <th class="product-quantity">Quantity</th>
+                                <th class="product-total">Total</th>
+                                <th class="product-remove">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product-thumbnali">
+                                        <img src="img/product1.png" alt="image" class="img-fluid" id="ppe">
+                                    </td>
+                                    <td class="product-name">
+                                      <h2 class="h5 text-black">Product 1</h2>
+                                    </td>
+                                    <td>$49.00</td>
+                                    <td>
+                                      <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
+                                    <div class="input-group-prepend">
+                                      <button class="btn btn-outline-black decrease" type="button">−</button>
+                                    </div>
+                                    <input type="text" class="form-control text-center quantity-amount" value="1" placeholder aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-outline-black increase" type="button">+</button>
+                                    </div>
+                                      </div>
+                                    </td>
+                                    <td>$49.00</td>
+                                    <td>
+                                      <a href="#" class="btn btn-black btn-sm">x</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                  <td class="product-thumbnali">
+                                      <img src="img/product2.png" alt="image" class="img-fluid" id="ppe">
+                                  </td>
+                                  <td class="product-name">
+                                    <h2 class="h5 text-black">Product 2</h2>
+                                  </td>
+                                  <td>$49.00</td>
+                                  <td>
+                                    <div class="input-group mb-3 d-flex align-items-center quantity-container" style="max-width: 120px;">
+                                  <div class="input-group-prepend">
+                                    <button class="btn btn-outline-black decrease" type="button">−</button>
+                                  </div>
+                                  <input type="text" class="form-control text-center quantity-amount" value="1" placeholder aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-outline-black increase" type="button">+</button>
+                                  </div>
+                                    </div>
+                                  </td>
+                                  <td>$49.00</td>
+                                  <td>
+                                    <a href="#" class="btn btn-black btn-sm">x</a>
+                                  </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row mb-5">
+                  <div class="col-md-6 mb-3 mb-md-0">
+               <button class="btn btn-dark rounded-pill btn-sm  p-3 ">Update Cart</button> 
+                 </div>  
+                 <div class="col-md-6">
+             <button class="btn btn-dark btn-sm rounded-pill p-3">Continue Shopping</button>
+                 </div>
+                </div>
+                <div class="row">
+                 <div class="col-md-12">
+            <label class="text-black h4" for="coupon">Coupon</label>
+            <p>Enter your coupon code if you have one.</p>
+                 </div>
+                 <div class="col-md-8 mb-3 mb-md-0">
+            <input type="text" class="form-control py-3" id="coupon" placeholder="Coupon Code">
+                 </div>
+                 <div class="col-md-4">
+          <button class="btn btn-dark btn-md rounded-pill p-3">Apply Coupon</button>        
+                 </div>
+                </div>
+              </div>
+              <div class="col-md-6 pl-5">
+                <div class="row justify-content-end">
+                  <div class="col-md-7">
+                    <div class="row">
+       <div class="col-md-12 text-right border-bottom mb-5">
+        <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+       </div>               
+    </div>
+          <div class="row-mb-3">
+            <div class="col-md-6">
+             <span class="text-black">Subtotal</span> 
+            </div>
+            <div class="col-md-6 text-right">
+              <strong class="text-black">$230.00</strong>
+            </div>
+          </div>
+          <div class="row-mb-5">
+            <div class="col-md-6">
+              <span class="text-black">Total</span> 
+             </div>
+             <div class="col-md-6 text-right">
+               <strong class="text-black">$230.00</strong>
+             </div>
+           </div>
+           <div class="row">
+            <div class="col-md-12">
+              <button class="btn btn-dark btn-lg rounded-pill p-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+       </div>
+       <!-- strt footer section -->
+       <footer class="footer-section">
+        <div class="container-realative">
+            <div class="sofa-img">
+              <img src="img/sofa.png" alt="image" class="img-fluid we" id="ppf">
+            </div>
+<div class="row">
+    <div class="col-lg-8">
+        <div class="subscription-form">
+            <h3 class="d-flex align-items-center">
+                <div class="me-1">
+                    <img src="img/envelope-outline.svg" alt="image" class="image-fluid">
+                </div>
+                <div> Subscribe to Newsletter </div>
+            </h3>
+            <form action="#" class="row g-3">
+                <div class="col-auto">
+                    <input type="text" class="form-control" placeholder="Enter Your Name">
+                </div>
+                <div class="col-auto">
+                    <input type="email" class="form-control" placeholder="Enter Your Email">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-success">
+                    <div class="fa fa-paper-plane">
+                    </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row g-5 mb-5">
+    <div class="col-lg-4">
+        <div class="mb-4 footer-logo-wrap">
+            <a href="#" class="footer-logo">
+                Furni
+                <span>.</span>
+            </a>
+        </div>
+        <p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant.
+        </p>
+        <ul class="list-unstyled custom-social">
+            <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a> </li>
+            <li><a href="#"> <span class="fa fa-brands fa-twitter"><span></a> </li>
+            <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+            <li><a href="#"> <span class="fa fa-brands fa-linkedin"></span></a>  </li>
+        </ul>
+    </div>
+<div class="col-lg-8">
+    <div class="row links-wrap">
+        <div class="col-6 col-sm-6 col-md-3">
+            <ul class="list-unstyled" id="edf">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+            <ul class="list-unstyled" id="edf">
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Knowladge base</a></li>
+                <li><a href="#">Live chat</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+            <ul class="list-unstyled" id="edf">
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-sm-6 col-md-3">
+            <ul class="list-unstyled" id="edf">
+                <li><a href="#">Nordic Chair</a></li>
+                <li><a href="#">Kruzo Aero</a></li>
+                <li><a href="#">Ergonomic Chair</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="border-top copyright">
+    <div class="row pt-4">
+        <div class="col-lg-6">
+            <p class="mb-2 text-center text-lg-start">
+                copyright&copy;
+            <script>document.write(new Date().getFullYear());</script>
+                    2024. All Rights Reserved. — Designed with love by
+        <a href="https://untree.co">Untree.co</a>
+        Distributed By 
+        <a hreff="https://themewagon.com">ThemeWagon</a>
+    <!-- License information: https://untree.co/license/ -->
+        </p>
+        </div>
+        <div class="col-lg-3 text-center text-lg-end"> 
+            <ul class="list-unstyled d-inline-flex ms-auto">
+                <li class="me-4"><a href="#"> Terms & Condition</a> </li>
+                  <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    </footer>
+    <!-- end footer section -->
+   
+       </body>
+       </html>

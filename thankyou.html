@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thankyou  page</title>
+    <!-- style -->
+    <link rel="stylesheet" href="CSS/thankyou.css" /> 
+   <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- font icon -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+  </head>
+<style>
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6a6a6a;
+    font-size: 14px;
+    background-color: #eff2f1;
+}
+/*  start of navigaton header */
+.custom-navbar{
+    background: #3b5d50 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* logo size */
+.custom-navbar .navbar-brand {
+    font-size: 34px;
+    font-weight: 600;
+    color: #fff;
+}
+/* toggler button */
+.navbar-toggler{
+    border-color: transparent;
+    color: rgba(255,255,255,.55);
+}
+/* nav-li and color line */
+
+.custom-navbar-nav li a{
+    position: relative;
+    font-weight: 500;
+    color: #ffffff !important;
+     opacity: .5; 
+    transition: .3s all ease;
+}
+ .custom-navbar-nav li {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.custom-navbar-nav li.active a{
+    opacity: 1;
+
+}
+
+.custom-navbar-nav li a::before{
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    background: #f9bf29;
+    height: 5px;
+    opacity: 1;
+    visibility: visible;
+    transition: .15s all ease-in-out;
+}
+/* icons */
+.fa-user{
+    color:white;
+    font-size: 20px;
+}
+.fa-cart-shopping{
+    color:white;
+    font-size: 20px;
+}
+/* end navigation */
+/* start hero section */
+.hero{
+    padding: 7rem;
+    background: #3b5d50;
+}
+.intro-excerpt {
+    max-width: 450px;
+}
+.hero h1 {
+
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+/* end hero section */
+.untree-section{
+    padding: 7rem 0;
+}
+/*.shop-cart{
+    font-size: 34px;
+    border: 1px solid transparent;
+}*/
+.fa-cart-arrow-down{
+    font-size: 34px;
+    
+
+}
+.thankyou-icon{
+    position: relative;
+    color: #3b5d50;
+}
+.thankyou-icon::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.55);
+}
+/* Start footer section */
+.footer-section{
+    padding: 80px 0;
+    background: #ffffff;
+   }
+   .container-realtive{
+    position: relative;
+   }
+   .sofa-img {
+    position: absolute;
+    z-index: 1;
+    margin-top: -280px;
+    right: 0;
+  }
+   .subscription-form {
+    position: relative;
+    z-index: 2;
+  
+  }
+  .subscription-form h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3b5d50;
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+  .subscription-form .btn{
+    border-radius: 10px !important;
+  }
+  .btn-primary {
+    background: #3b5d50;
+    border-color: #3b5d50;
+  }
+  .footer-logo{
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #3b5d50;
+  }
+  .footer-logo-wrap{
+  margin-top:84px ;
+  }
+  .custom-social li {
+    margin: 2px;
+    display: inline-block;
+  }
+  .custom-social li a{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+  background: #dce5e4;
+  color: #3b5d50;
+  border-radius: 50%;
+  }
+  .custom-social li a:hover{
+    background-color: #3b5d50;
+    color: #ffffff;
+  }
+  .we{
+    margin-right: 150px;
+    margin-top: 150px;
+  }
+  #ppf{
+    width: 300px;
+    height: auto;
+  }
+  #edf{
+    margin-top: 154px;
+  }
+  
+  .links-wrap {
+    margin-top: 40px;
+  }
+  .links-wrap li{
+    margin-bottom: 10px;
+  }
+  .copyright {
+    font-size: 14px !important;
+  }
+  .border-top {
+    border-color: #dce5e4;
+    border-top: 1px solid #dee2e6 !important;
+  }
+  .footer-section a {
+    text-decoration: none;
+    color: #2f2f2f;
+    transition: .3s all ease;
+  }
+  /* end footer section */
+</style>
+<body>
+<!-- Start of Navigation-Header -->
+<nav
+class="custom-navbar navbar navbar navbar-expand-md navbar-dark p-3"
+arial-label="Furni navigation bar">
+
+<div class="container">
+  <a href="furni.html" class="navbar-brand"> Furni. </a>
+  <button class="navbar-toggler"type="button"data-bs-toggle="collapse"
+  data-bs-target="#navbarsFurni"aria-controls="navbarsFurni"aria-expanded="false"
+  aria-label="Toggle navigation">
+
+    <div class="navbar-toggler-icon"></div>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsFurni">
+    <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+
+      <li class="nav-item active"><a href="furni.html" class="nav-link">Home</a> </li>
+      <li><a href="shop.html" class="nav-link">Shop</a> </li>
+      <li><a href="about.html" class="nav-link">About us</a></li>
+      <li><a href="service.html" class="nav-link">Service</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li> <a href="contact.html" class="nav-link">Contact us</a> </li>
+    </ul>
+
+    <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+      <li>
+        <a href="#" class="nav-link">
+          <i class="fa-regular fa-user m-2"></i>
+        </a>
+      </li>
+      <li>
+        <a href="cart.html" class="nav-link">
+          <i class="fa-solid fa-cart-shopping m-2"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<!-- End of Navigation-Header -->
+
+<!-- start hero section -->
+<div class="hero">
+  <div class="container">
+      <div class="row justify-content-between">
+          <div class="col-lg-5">
+              <div class="intro-excerpt">
+                  <h1>cart</h1>
+              </div>
+          </div>
+          <div class="col-lg-7"></div>
+      </div>
+  </div>
+</div>
+<!-- end hero section -->    
+ <div class="untree-section">
+    <div class="container">
+        <div class="row">
+    <div class="col-md-12 text-center pt-5">
+        <span class="display-3 thankyou-icon text-primary">
+            <i class="fa-solid fa-cart-arrow-down "></i>
+        </span>
+        <h2 class="display-3 text-black">Thank you!</h2>
+        <p class="lead mb-5">You order was successfuly completed.</p>
+        <p>
+            <a href="shop.html" class="btn btn-dark rounded-pill btn-lg py-3 btn-block">Back to shop</a>
+           </p>
+        </div>
+      </div>
+    </div>
+ </div>
+<!-- end to thankyou -->
+  <!-- start footer section -->
+  <footer class="footer-section">
+    <div class="container-realative">
+        <div class="sofa-img">
+             <img src="img/sofa.png" alt="image" class="img-fluid we" id="ppf">
+            
+        </div>
+<div class="row">
+<div class="col-lg-8">
+    <div class="subscription-form">
+        <h3 class="d-flex align-items-center">
+            <div class="me-1">
+                <img src="img/envelope-outline.svg" alt="image" class="image-fluid">
+            </div>
+            <div> Subscribe to Newsletter </div>
+        </h3>
+        <form action="#" class="row g-3">
+            <div class="col-auto">
+                <input type="text" class="form-control" placeholder="Enter Your Name">
+            </div>
+            <div class="col-auto">
+                <input type="email" class="form-control" placeholder="Enter Your Email">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-success">
+                <div class="fa fa-paper-plane">
+                </div>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<div class="row g-5 mb-5">
+<div class="col-lg-4">
+    <div class="mb-4 footer-logo-wrap">
+        <a href="#" class="footer-logo">
+            Furni
+            <span>.</span>
+        </a>
+    </div>
+    <p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant.
+    </p>
+    <ul class="list-unstyled custom-social">
+        <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a> </li>
+        <li><a href="#"> <span class="fa fa-brands fa-twitter"><span></a> </li>
+        <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+        <li><a href="#"> <span class="fa fa-brands fa-linkedin"></span></a>  </li>
+    </ul>
+</div>
+<div class="col-lg-8">
+<div class="row links-wrap">
+    <div class="col-6 col-sm-6 col-md-3">
+        <ul class="list-unstyled" id="edf">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-3">
+        <ul class="list-unstyled" id="edf">
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Knowladge base</a></li>
+            <li><a href="#">Live chat</a></li>
+        </ul>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-3">
+        <ul class="list-unstyled" id="edf">
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-3">
+        <ul class="list-unstyled" id="edf">
+            <li><a href="#">Nordic Chair</a></li>
+            <li><a href="#">Kruzo Aero</a></li>
+            <li><a href="#">Ergonomic Chair</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="border-top copyright">
+<div class="row pt-4">
+    <div class="col-lg-6">
+        <p class="mb-2 text-center text-lg-start">
+            copyright&copy;
+        <script>document.write(new Date().getFullYear());</script>
+                . All Rights Reserved. — Designed with love by
+    <a href="https://untree.co">Untree.co</a>
+    Distributed By 
+    <a hreff="https://themewagon.com">ThemeWagon</a>
+<!-- License information: https://untree.co/license/ -->
+    </p>
+    </div>
+    <div class="col-lg-4 text-center text-lg-end"> 
+        <ul class="list-unstyled d-inline-flex ms-auto">
+            <li class="me-4"><a href="#"> Terms & Condition</a> </li>
+              <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+</footer>
+<!-- end footer section -->
+
+</body>
+</html>
